@@ -1,0 +1,1 @@
+<cfquery name="qTest" datasource="drl_mysql5" username="drlarchitect" password="TXQ5yUpBhKGsmXap"></cfquery>
