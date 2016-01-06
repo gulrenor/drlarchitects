@@ -1,0 +1,168 @@
+
+/***********************************************************************************************************************
+DOCUMENT: style/format.css
+DEVELOPED BY: Ryan Stemkoski
+COMPANY: Zipline Interactive
+EMAIL: ryan@gozipline.com
+PHONE: 509-321-2849
+DATE: 2/26/2009
+DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
+************************************************************************************************************************/
+
+
+#wrapper {
+	width: 324px;
+	max-height: 400px;
+	overflow:hidden;
+	text-transform:none;
+}
+
+.accordionButton {	
+	width: 324px;
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	color:#666;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+	line-height:40px;
+	padding-left:40px;
+	font-family:"Cantarell"; text-transform:uppercase;
+	}
+
+a:hover .accordionButton {
+	background-color:#666;
+	color:#FFF;
+}
+	
+.accordionContent {	
+	display:none;
+	width: 324px;
+	height: 280px; /* this controls how far down the accordion goes, so: 2 headings = 320px, 3 headings = 280px, 4 headings 240px, etc. Each heading is 40px */
+	float: left;
+	_float: none; /* Float works in all browsers but IE6 */
+	overflow:auto; overflow-x:hidden;
+		
+	}
+	
+	.accordionContent a {
+		display:block;
+		margin:0px;
+		width:100%;
+		padding-left:50px;
+		line-height:30px;
+		text-decoration:none;
+		color:#999;
+	}
+	.accordionContent a:hover {
+		color:#fff;
+		background-color:#999;
+	}
+	.accordionContent a#active {
+		color:#333;
+		background-color:#fff;
+	}
+	
+	#seeall, #seeall:hover, #seeall:active {
+		display:block;
+		margin-top:10px;
+		padding:0 10px 0 10px;
+		float:right;
+		color:#900;
+		text-align:center;
+		width:80px;
+		line-height:20px;
+		}
+		
+		#seeall:hover {
+			background-color:#666;
+			color:#FFF;
+		}
+/***********************************************************************************************************************
+ EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+************************************************************************************************************************/
+
+.on {
+	color:#900;
+	font-weight: bold;
+	}
+	
+.over {
+	background: #CCCCCC;
+	}
+	
+	
+
+	
+	
+/*new*/
+.Menu {
+	float:left;
+	width: 320px;
+	max-height: 400px;
+	margin-left:3px;
+	overflow:none;
+	text-transform:none;
+	font-style:normal;
+}
+
+
+.Menu a, .Menu a:visited {
+	display:block;
+	text-decoration:none;
+	line-height:50px;
+	color:#666;
+	margin-left:2em;
+}
+
+/* this is the menu button/header text */
+.Menu li {
+	display:block;
+	font-size:1em;
+	font-family:"Cantarell";
+	font-weight:700;
+	text-transform:uppercase;
+	/*border-bottom:1px solid #b0a272;*/
+	/*background-image:url(images/menu.png);*/
+}
+
+.Menu li#active a {
+	color:#900;
+}
+
+.Menu li#active a:hover {
+	color:#b0a272;
+}
+
+.Menu li:hover, .Menu li:hover a, .Menu ul li:hover#active, .Menu ul li:hover#active a {
+	background-color:#333;
+	color:#fff;
+}
+
+.Menu ul {
+	display:block;
+	width:100%;
+	overflow:auto;
+	height:250px;
+	max-height:250px;
+}
+
+/* this is the menu item text */
+.Menu ul li {
+	font-family:"PT Sans";
+	text-transform:none;
+	font-size:1em;
+	padding-left:2em;
+	font-weight:400;
+	border:0;
+	background-image:none;
+}
+
+.Menu ul li a {
+	line-height:30px;
+}
+
+.Menu ul li#active, .Menu ul li#active a {
+	background-color:#b0a272;
+	color:#fff;
+	
+}

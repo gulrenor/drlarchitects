@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <tableOfContent>
+    <tocData>
+      <pageNumber value="1" />
+      <title value="" />
+      <children>
+        <tocData>
+          <pageNumber value="1" />
+          <title value="Cover Page" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="2" />
+          <title value="Mission &amp; Letter From the President" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="4" />
+          <title value="Spinal Cord Injury" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="6" />
+          <title value="Chlera" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="8" />
+          <title value="Education" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="10" />
+          <title value="Our Work &amp; by the Numbers" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="12" />
+          <title value="2011 in Pictures" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="14" />
+          <title value="Financial &amp; Partners" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="16" />
+          <title value="Key Staff &amp; History" />
+          <children />
+        </tocData>
+        <tocData>
+          <pageNumber value="18" />
+          <title value="About the Cover" />
+          <children />
+        </tocData>
+      </children>
+    </tocData>
+  </tableOfContent>
+  <bookProperties>
+    <pages>
+      <defaultValue>
+        <BGColor value="#FFFFFF" />
+        <width value="1224" />
+        <height value="792" />
+        <slideshowDelay value="2000" />
+      </defaultValue>
+      <elements>
+        <page>
+          <links />
+          <id value="1" />
+          <width value="612" />
+        </page>
+        <page>
+          <links />
+          <id value="2" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="3" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="4" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="5" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="6" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="7" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="8" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="9" />
+          <isWide value="true" />
+        </page>
+        <page>
+          <links />
+          <id value="10" />
+          <width value="612" />
+        </page>
+      </elements>
+    </pages>
+    <searchIndex ext="search/searchtext.xml" />
+    <bookId value="2a5daf03-5ef0-4059-8adb-c24dbbd77b0d" />
+    <bookWidth value="612" />
+    <bookHeight value="792" />
+    <bookName value="Annual Report_web" />
+    <bookBG src="" scale="scale" width="0" height="0" color="#0A4025" />
+    <searchVisible value="false" />
+    <navigationVisible value="true" />
+    <singlePageMode value="false" />
+    <rightToLeftMode value="false" />
+    <hardCover value="false" border="false" color="#F5AB6E" width="15" height="15" />
+    <skin style="ClassicGrey" />
+    <tocVisible value="true" />
+    <slideshowVisible value="true" />
+    <bookmarksVisible value="true" />
+    <bookLang value="en" />
+    <sessionRestore value="false" />
+  </bookProperties>
+</Properties>

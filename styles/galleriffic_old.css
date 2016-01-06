@@ -1,0 +1,97 @@
+.galleriffic {}
+
+.galleriffic div.slideshow span.image-wrapper { 
+	display: block; 
+	position: absolute;
+	}
+
+.galleriffic div.loader { 
+/*	width:700px; */
+	height:400px; 
+	position: absolute;
+	}
+
+.galleriffic a.advance-link img { 
+	border:0px; 
+	height:400px; 
+	/*width:700px; */
+	}
+
+.galleriffic .bottom_pagination { 
+	display:none; 
+	}
+
+.galleriffic #gallery { 
+	/*width:700px;*/ 
+	}
+
+.galleriffic .slideshow-container { 
+	/*width:700px; */
+	padding:0px; 
+	margin:0px; 
+	}
+.galleriffic #slideshow { 
+	width:700px; /* this has to be here to maintain the width of the container */
+	height:400px; 
+	padding:0px; 
+	margin:0px; 
+	}
+
+/*.galleriffic .navigation { 
+	width:auto; 
+	margin:0px; 
+	padding:0px; 
+	float:right; 
+	}
+*/
+.galleriffic #thumbs { 
+	margin:10px 0px 0px 0px; 
+	position:absolute; 
+	float:left;
+	}
+.galleriffic #thumbs ul { 
+	padding:0px; 
+	margin:0px 0px 0px 0px; 
+	list-style:none; 
+	}
+.galleriffic #thumbs li { 
+	width:12px; 
+	height:12px; 
+	padding:0px; 
+	margin:0px 8px 0px 0px; 
+	list-style-type:none; 
+	background:red none; 
+	float:left;
+	}
+.galleriffic #thumbs li a { 
+	width:15px; 
+	height:15px; 
+	/*font-size:.00001em;*/ 
+	line-height:100%; 
+	color:#ccc; 
+	background:#ccc; 
+	display:block; 
+	border:1px solid #999;
+
+	}
+.galleriffic #thumbs li a:hover { 
+	color:#6c6e87; 
+	background:#900; 
+	}
+.galleriffic #thumbs li.selected a { 
+	color:#6c6e87; 
+	background:#900; 
+	}
+
+/*.galleriffic #controls {
+	float:left;
+	}
+*/
+/*
+.galleriffic * html #thumbs { 
+	margin:-27px 0px 0px 659px; 
+	}
+.galleriffic #thumbs { 
+	*margin:-27px 0px 0px 659px; 
+	}
+*/
