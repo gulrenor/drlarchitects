@@ -29,3 +29,11 @@ $RECYCLE.BIN/
 
 ### Vagrant ###
 .vagrant/
+Vagrantfile
+
+
+### puphpet ###
+puphpet*/
+
+
+auth/
