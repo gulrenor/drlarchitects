@@ -1,19 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat);
 ul, ol, li {
   margin: 0;
   padding: 0;
   list-style: none; }
 
+:link, :link, :visited, :hover {
+  text-decoration: none;
+  color: #323232; }
+
+html {
+  min-height: 100%;
+  font-size: 16; }
+
+body {
+  font-family: "Roboto";
+  color: #323232;
+  width: 80%;
+  margin: 0 auto; }
+
+header, footer, h1, h2, h3 {
+  font-family: "Montserrat";
+  color: #7d0000; }
+
+h1, h2, h3 {
+  margin: 0 0 -0.25em -0.25em; }
+
 nav {
   position: relative;
-  font-family: "Source Sans Pro";
   text-transform: uppercase;
-  width: 80%;
   margin: 0 auto;
-  background-color: beige; }
+  border-bottom: 1px solid #7d0000;
+  margin-bottom: 3.1em; }
   nav #logo {
-    width: 8em;
-    height: 6em; }
+    position: relative;
+    top: 2.1em; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -21,14 +41,38 @@ nav {
     /* reset default */
     position: absolute;
     right: 0;
-    top: 0;
-    background-color: coral; }
+    bottom: 0; }
   nav li {
     float: left;
     display: inline-block;
     vertical-align: middle;
     padding: 0.5em;
     margin-left: 0.5em;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #7d0000;
+    transition: 0.3s; }
+    nav li:hover {
+      color: white;
+      background-color: #7d0000;
+      cursor: pointer; }
+
+footer {
+  font-size: 12;
+  background-color: #7d0000;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+  min-height: 5em; }
+  footer p {
+    line-height: 5em;
+    margin-right: 1em; }
+
+#container {
+  margin: 0 1em; }
+  #container a {
+    border-bottom: 1px dotted #7d0000;
+    transition: 0.3s; }
+    #container a:hover {
+      color: #7d0000;
+      background-color: #ffe3e3; }
 
 /*# sourceMappingURL=default.css.map */
