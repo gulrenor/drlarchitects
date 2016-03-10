@@ -1,13 +1,22 @@
 <!doctype html>
+<<<<<<< HEAD
 <html ng-app="website">
 
   <head>
     <title>DRL Architects</title>
     <meta charset="utf-8" />
+=======
+<html ng-app="sliderApp">
+
+  <head>
+    <title>DRL Architects</title>
+
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
     <meta name="google-site-verification" content="TgOZVFfABegNxoPitYy_PznmDB_PAQbrLI3EgfAg1Ko" />
 
     <!-- ### REMOVE FOR PRODUCTION ### -->
     <!--<meta http-equiv="refresh" content="3" />-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/default-sass.css">
   </head>
@@ -21,10 +30,25 @@
                 <li><a href="#company">Company</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+=======
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/default.css">
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <img id="logo" src="/images/logo.png" />
+            <ul>
+                <li>Company</li>
+                <li>Projects</li>
+                <li>Contact</li>
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
             </ul>
         </nav>
     </header>
 
+<<<<<<< HEAD
     <section ng-controller="mainController">
       <!-- Angular template injection -->
       <div ng-view></div>
@@ -41,12 +65,52 @@
       <section id="footer">
         <p id="copyright">&copy; 2016 DRL Architects&mdash;All Rights Reserved.</p>
       </section>
+=======
+    <section id="container">
+      <h1>A Page</h1>
+      <div ng-controller="slideShowCtrl">
+        <div class="container slider">
+          <img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}" />
+
+          <a class="arrow prev" href="" ng-click="nextSlide()"></a>
+          <a class="arrow next" href="" ng-click="prevSlide()"></a>
+
+          <nav class="nav">
+            <div class="wrapper">
+              <ul class="dots">
+                <li class="dot" ng-repeat="slide in slides">
+                  <a href="" ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non purus ac odio fringilla maximus. Nullam sodales libero vitae risus ultricies convallis. Nunc luctus libero arcu, et aliquam ante cursus vel. Pellentesque condimentum, lacus in sodales pharetra, odio magna rhoncus neque, eu dictum justo magna a dolor. Donec erat quam, tempus ac posuere non, pretium eu odio. Curabitur nisl nisi, maximus id nisl at, egestas ultrices lorem. <a href="http://www.google.com">Ut laoreet enim sed</a> pellentesque maximus. Sed ultrices nibh sit amet ex ultricies tincidunt. Etiam congue accumsan sem. Pellentesque ex nisl, posuere a vulputate eget, luctus at dolor. Vivamus dui neque, interdum vitae laoreet eu, volutpat nec neque. Maecenas lectus sapien, iaculis sit amet varius id, pellentesque quis elit.</p>
+
+      <p>Duis varius finibus augue, ac eleifend turpis vulputate at. Ut eleifend id tortor in aliquet. Praesent malesuada lectus quam, a porta erat pellentesque non. Aenean eu scelerisque mi. Sed sed arcu id metus egestas ultrices. Nam erat massa, tempor vel blandit nec, aliquet fermentum enim. Praesent quis risus cursus, mattis purus eget, gravida ligula. Morbi dictum porttitor vulputate. Pellentesque id leo sit amet lectus varius elementum.</p>
+
+      <p>Donec lectus velit, congue nec lacinia at, rutrum at orci. In at semper libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac ante a neque lobortis sagittis in quis dolor. Etiam et tellus massa. Mauris tortor nunc, eleifend quis tincidunt eget, aliquet ut odio. Nunc metus ex, interdum id sem a, pellentesque porttitor libero. Donec vitae ullamcorper erat, quis fringilla libero. Sed lacinia venenatis tempor. Duis pharetra at orci at gravida. Phasellus mollis scelerisque ante. Mauris rutrum dolor leo, id convallis magna ornare eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean condimentum, lectus ut volutpat tincidunt, neque dui malesuada ipsum, sed consequat justo magna sodales dui.</p>
+
+      <p>Curabitur elit quam, consectetur ac pretium vitae, varius sed libero. Sed eleifend convallis diam, et ultricies leo tincidunt a. Aliquam congue tempus cursus. Nulla vitae quam dictum, hendrerit sem non, vulputate erat. Donec sem nunc, fermentum non metus id, tempor suscipit leo. Integer augue libero, ultrices ac sodales at, blandit quis orci. Proin id quam porttitor, commodo quam et, laoreet metus. Maecenas at fermentum quam, a convallis eros. Quisque enim leo, euismod sit amet fermentum a, fermentum eget orci. Duis sit amet neque sed sem dignissim venenatis. Quisque non est pretium leo accumsan facilisis quis in turpis.</p>
+
+      <p>Phasellus efficitur volutpat nibh maximus tincidunt. Ut euismod mattis magna vel blandit. Nam non libero vel dui auctor placerat a et ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dui justo, porta non lorem et, sagittis blandit quam. Etiam blandit sapien eu orci posuere, nec congue risus viverra. Nullam rutrum ipsum luctus diam efficitur congue. Fusce ut ipsum a tellus finibus fermentum. Donec auctor justo quis turpis congue imperdiet. Curabitur sed lacus id nulla pulvinar sollicitudin ut sit amet est.</p>
+    </section>
+
+    <footer>
+      <p id="copyright">&copy; 2016 DRL Architects&mdash;All Rights Reserved.</p>
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.min.js"></script>
+<<<<<<< HEAD
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.min.js"></script>
     <script src="scripts/splash-slide.js"></script>
+=======
+    <script src="scripts/slider.js"></script>
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
 
   </body>
 

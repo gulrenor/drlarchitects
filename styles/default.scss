@@ -14,7 +14,11 @@ ul, ol, li {
   list-style: none;
 }
 
+<<<<<<< HEAD
 :link, :visited, {
+=======
+:link, :link, :visited, :hover {
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
   text-decoration: none;
   color: $default-text-color;
 }
@@ -34,7 +38,11 @@ body {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 header, footer, h1, h2, h3, #tagline {
+=======
+header, footer, h1, h2, h3 {
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
   font-family: $header-font;
   color: $drl-red;
 }
@@ -83,6 +91,7 @@ nav {
 }
 
 
+<<<<<<< HEAD
 #tagline {
   display: flex;
   justify-content: space-between;
@@ -92,11 +101,17 @@ nav {
   }
 }
 
+=======
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
 
 // ### Footer ###
 
 footer {
+<<<<<<< HEAD
   font-size: ($font-size)-4px;
+=======
+  font-size: ($font-size)-4;
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
   background-color: $drl-red;
   color: rgba(255,255,255,0.6);
   text-align: right;
@@ -121,7 +136,10 @@ footer {
     }
   }
 }
+<<<<<<< HEAD
 
 .slide {
   width: 100%;
 }
+=======
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1

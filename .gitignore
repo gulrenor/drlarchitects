@@ -37,4 +37,7 @@ puphpet*/
 
 
 auth/
+<<<<<<< HEAD
 php/mysql.config.php
+=======
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
