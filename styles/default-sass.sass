@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat)
+$header-font: 'Montserrat'
+$default-font: 'Roboto'
+$font-size: 16
+$drl-red: rgba(125,0,0,1)
+$drl-red-transparent: rgba(125,0,0,0.8)
+$default-text-color: rgba(50,50,50,1)
+
+//nudges the logo down a bit
+$logo-offset: 2.1em
+
+
+// ### Clears not handled by normalize.css ###
+
+ul, ol, li
+  margin: 0
+  padding: 0
+  list-style: none
+
+p
+  line-height: 1.5rem
+  margin: 0
+  padding: 0
+li
+  margin: 0
+  padding: 0
+
+.float-right
+  float: right
+
+// ### Globals ###
+
+html
+  min-height: 100%
+  font-size: $font-size
+
+body
+  font-family: $default-font
+  color: $default-text-color
+  width: 80%
+  margin: 0 auto
+
+a
+  text-decoration: none
+  color: $default-text-color
+  &:hover
+    text-decoration: underline
+
+header, footer, h1, h2, h3, #tagline
+  font-family: $header-font
+  color: $drl-red
+
+h1, h2, h3
+  margin: 0 0 -0.25em -0.25em
+
+
+
+
+
+// ###--- Header ---###
+nav
+  position: relative
+  text-transform: uppercase
+  margin: 0 auto
+  border-bottom: 1px solid $drl-red
+  margin-bottom: $logo-offset+1em
+
+  #logo
+    position: relative
+    top: $logo-offset
+
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    position: absolute
+    right: 0
+    bottom: 0
+
+  li
+    float: left
+    cursor: pointer
+    vertical-align: middle
+    padding: 0.5em
+    margin-left: 0.5em
+    transition: 0.3s
+    a
+      color: $drl-red
+      transition: 0.3s
+    &:hover
+      background-color: $drl-red
+      a
+        color: white
+        text-decoration: none
+
+
+
+
+
+// ### Footer ###
+
+footer
+  margin-top: 1vw
+
+  #tagline
+    display: flex
+    justify-content: space-between
+
+    span
+      text-transform: uppercase
+
+  #footer
+    font-size: ($font-size)-4px
+    background-color: $drl-red
+    color: rgba(255,255,255,0.6)
+    text-align: right
+    min-height: 3rem
+
+    p
+      line-height: 3rem
+      margin-right: 1rem
+
+
+// ### Main ###
+
+#container
+  position: relative
+  margin: 0 1em
+  height: 100%
+
+  a
+    border-bottom: 1px dotted $drl-red
+    transition: 0.3s
+
+    &:hover
+      color: $drl-red
+      background-color: lighten($drl-red, 70%)
+
+.slide
+  width: 100%
+
+
+// ### splash-slide ###
+
+#splash-image
+  position: relative
+  min-height: 33vw
+
+@keyframes hideAdd
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.slideImg
+  position: absolute
+  width: 100%
+  z-index: 1
+
+.slideImg.ng-hide
+  display: block !important
+  opacity: 0
+  z-index: 0
+
+.slideImg.ng-hide-add
+  z-index: 20
+  animation: 1s hideAdd
+
+
+// ### Image Gallery ###
+
+.img-gallery-flex
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-content: space-between
+  .img-gallery-container
+    position: relative
+    width: 23%
+    height: 10vw
+    border: 1px solid rgba(180,180,180,1)
+    margin: 0.5vw 0
+    overflow: hidden
+    img
+      width: 100%
+      max-height: 100%
+      margin: auto
+      opacity: 1
+      transition: opacity 0.5s
+      &:hover
+        cursor: pointer
+    .img-gallery-modal
+      position: fixed
+      width: 100vw
+      height: 100vh
+      top: 0
+      left: 0
+      background-color: $drl-red-transparent
+      z-index: 50
+      overflow: none
+      img
+        position: absolute
+        left: 10vw
+        top: 15vh
+        width: 80vw
+        margin: auto
+    .projectInfo
+      position: absolute
+      display: flex
+      flex-direction: column
+      align-content: center
+      justify-content: center
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: $drl-red-transparent
+      color: white
+      opacity: 0
+      transition: opacity 0.5s
+      text-align: center
+      &:hover
+        cursor: pointer
+        opacity: 1
+      .img-gallery-clientname
+        font-size: 1.25rem
+        weight: bold

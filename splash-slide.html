@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" ng-app="website">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- ### REMOVE FOR PRODUCTION ### -->
+  <!--<meta http-equiv="refresh" content="5" />-->
+  <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+</head>
+
+<style>
+
+.slideImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  max-width: 80%;
+  margin: 10vh 10%;
+  z-index: 1;
+}
+
+.slideImg.ng-hide {
+  display: block !important;
+  opacity: 0;
+  z-index: 0;
+}
+
+.slideImg.ng-hide-add {
+  z-index: 20;
+  animation: 1s hideAdd;
+}
+
+</style>
+
+
+<section id="container">
+
+  <!-- ### Slideshow ### -->
+  <table border="1" ng-controller="slideImgCtrl">
+    <thead>
+      <th>$index</th>
+      <th>filename</th>
+      <th>curIndex</th>
+      <th>showme?</th>
+    </thead>
+
+     for testing
+    <tr ng-repeat="i in data">
+      <td ng-bind="$index"></td>
+      <td ng-bind="'images/'+ i.Filename + '.jpg'"></td>
+      <td ng-bind="curIndex"></td>
+      <td ng-bind="checkIndex($index)"></td>
+      <td><img class="slideImg" ng-src="images/{{i.Filename}}.jpg" ng-show="checkIndex($index)" /></td>
+    </tr>
+
+  </table>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.min.js"></script>
+<script src="scripts/splash-slide.js"></script>
+
+</body>
+
+</html>

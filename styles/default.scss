@@ -14,7 +14,7 @@ ul, ol, li {
   list-style: none;
 }
 
-:link, :link, :visited, :hover {
+:link, :visited, {
   text-decoration: none;
   color: $default-text-color;
 }
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-header, footer, h1, h2, h3 {
+header, footer, h1, h2, h3, #tagline {
   font-family: $header-font;
   color: $drl-red;
 }
@@ -83,11 +83,20 @@ nav {
 }
 
 
+#tagline {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 1.65vw;
+    text-transform: uppercase;
+  }
+}
+
 
 // ### Footer ###
 
 footer {
-  font-size: ($font-size)-4;
+  font-size: ($font-size)-4px;
   background-color: $drl-red;
   color: rgba(255,255,255,0.6);
   text-align: right;
@@ -111,4 +120,8 @@ footer {
       background-color: lighten($drl-red, 70%);
     }
   }
+}
+
+.slide {
+  width: 100%;
 }
