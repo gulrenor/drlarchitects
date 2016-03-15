@@ -149,7 +149,7 @@ footer {
     .img-gallery-flex .img-gallery-container .img-gallery-modal {
       position: fixed;
       width: 100vw;
-      height: 100vh;
+      max-height: 80vh;
       top: 0;
       left: 0;
       background-color: rgba(125, 0, 0, 0.8);
