@@ -1,0 +1,41 @@
+
+# Created by https://www.gitignore.io/api/windows,vagrant,sass,puppet-librarian
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+### Vagrant ###
+.vagrant/
+
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+
+### puppet-librarian ###
+# puppet-librarian - https://github.com/rodjek/librarian-puppet
+.tmp/
+modules/
+
+auth/
+puphpet/
+admin/
