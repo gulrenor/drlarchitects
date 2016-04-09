@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app="website">
+
+  <head>
+    <title>DRL Architects</title>
+    <meta charset="utf-8"/>
+    <meta name="google-site-verification" content="TgOZVFfABegNxoPitYy_PznmDB_PAQbrLI3EgfAg1Ko"/>
+    <!-- ### REMOVE FOR PRODUCTION ### -->
+    <!--<meta http-equiv="refresh" content="3" />-->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/default-sass.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <a href="#/"><img id="logo" src="images/logo.png"/></a>
+        <ul>
+          <li>
+            <a href="#company">Company</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section ng-controller="mainController">
+      <!-- Angular template injection -->
+      <div ng-view></div>
+    </section>
+
+    <footer>
+      <section id="tagline">
+        <span>Architecture</span>
+        <span>Planning</span>
+        <span>Interior Design</span>
+        <span>Construction Management</span>
+      </section>
+
+      <section id="footer">
+        <p id="copyright">&copy; 2016 DRL Architects&mdash;All Rights Reserved.</p>
+      </section>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.min.js"></script>
+    <script src="scripts/splash-slide.js"></script>
+    <script src="scripts/slider.js"></script>
+
+  </body>
+
+</html>

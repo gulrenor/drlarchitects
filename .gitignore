@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
+# Created by https://www.gitignore.io/api/windows,sass,vagrant
+=======
 # Created by https://www.gitignore.io/api/windows,vagrant,sass,puppet-librarian
+>>>>>>> master
 
 ### Windows ###
 # Windows image file caches
@@ -22,6 +26,27 @@ $RECYCLE.BIN/
 *.lnk
 
 
+<<<<<<< HEAD
+### Sass ###
+.sass-cache/
+*.css.map
+
+
+### Vagrant ###
+.vagrant/
+Vagrantfile
+
+
+### puphpet ###
+puphpet*/
+
+
+auth/
+<<<<<<< HEAD
+php/mysql.config.php
+=======
+>>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
+=======
 ### Vagrant ###
 .vagrant/
 
@@ -39,3 +64,4 @@ modules/
 auth/
 puphpet/
 admin/
+>>>>>>> master

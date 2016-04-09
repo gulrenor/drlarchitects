@@ -1,0 +1,7 @@
+<section id="splash-image" ng-controller="slideImgCtrl">
+
+  <div ng-repeat="i in data | filter: {Oversized: 1}">
+    <img class="slideImg" ng-src="images/{{i.Filename}}.jpg" ng-show="checkIndex($index)" />
+  </div>
+
+</section>

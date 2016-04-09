@@ -1,0 +1,18 @@
+<section class="img-gallery-flex" ng-controller="imageGalleryCtrl">
+  <div class="img-gallery-container" ng-repeat="i in data | filter: {Oversized: 0}" ng-mouseover="hover(i.Filename)">
+    <img ng-src="images/{{i.Filename}}.jpg"/>
+    <a href="" ng-click="showModal = ! showModal">
+      <div class="projectInfo">
+        <p class="img-gallery-clientname">{{i.Clientname}}</p>
+        <p class="img-gallery-citystate">{{i.City}},
+          {{i.stateabrv}}</p>
+      </div>
+    </a>
+    <a href="" ng-click="showModal = ! showModal">
+    <div class="img-gallery-modal" ng-show="showModal">
+      <img ng-src="images/{{i.Filename}}.jpg" />
+    </div>
+    </a>
+  </div>
+
+</section>
