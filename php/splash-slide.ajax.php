@@ -18,7 +18,7 @@ if (is_file($config)) {
   while ($row = mysqli_fetch_array($result)) {
     $data[] = $row;
   }
-  header('Content-type: application/json');
+  //header('Content-type: application/json');
   print json_encode($data);
 
 } else {

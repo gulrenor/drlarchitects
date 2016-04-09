@@ -1,10 +1,3 @@
-
-<<<<<<< HEAD
-# Created by https://www.gitignore.io/api/windows,sass,vagrant
-=======
-# Created by https://www.gitignore.io/api/windows,vagrant,sass,puppet-librarian
->>>>>>> master
-
 ### Windows ###
 # Windows image file caches
 Thumbs.db
@@ -26,7 +19,6 @@ $RECYCLE.BIN/
 *.lnk
 
 
-<<<<<<< HEAD
 ### Sass ###
 .sass-cache/
 *.css.map
@@ -41,27 +33,15 @@ Vagrantfile
 puphpet*/
 
 
-auth/
-<<<<<<< HEAD
-php/mysql.config.php
-=======
->>>>>>> 24aa6974de1b9d586c43e4c7dbd7eaba3a1f67f1
-=======
-### Vagrant ###
-.vagrant/
-
-
-### Sass ###
-.sass-cache/
-*.css.map
-
-
 ### puppet-librarian ###
 # puppet-librarian - https://github.com/rodjek/librarian-puppet
 .tmp/
 modules/
 
+
+php/mysql.config.php
 auth/
 puphpet/
 admin/
->>>>>>> master
+
+/old-cfml
