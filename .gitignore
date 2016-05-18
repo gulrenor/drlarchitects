@@ -39,7 +39,7 @@ puphpet*/
 modules/
 
 
-php/mysql.config.php
+php/*.config.php
 auth/
 puphpet/
 admin/

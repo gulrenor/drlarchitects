@@ -29,10 +29,27 @@
         </ul>
       </nav>
     </header>
-
+    <!--
     <section ng-controller="mainController">
-      <!-- Angular template injection -->
-      <div ng-view></div>
+    <div ng-view></div>
+  </section>
+  -->
+    <section id="splash-image" ng-controller="ProjectsCtrl">
+      <div ng-repeat="project in projects">
+        <div ng-repeat="image in filteredResults = (project.Files | filter:{Oversized:'1'})">
+
+          <p>
+            {{project.Client}} &mdash; {{project.City}}, {{project.State}}
+          </p>
+
+          <img ng-src="{{appendExtension(image.Filename)}}"/>
+
+        </div>
+      </div>
+      <p>
+        There are {{filteredResults.length}} results.
+      </p>
+
     </section>
 
     <footer>

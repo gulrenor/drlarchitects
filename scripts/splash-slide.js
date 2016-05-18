@@ -1,10 +1,43 @@
 var app = angular.module('website', ['ngAnimate', 'ngRoute']);
 
+var transact = "http://www.twharrison.com/2016-current-live/php/splash-slide.ajax.php";
+
+app.controller('ProjectsCtrl', ['$scope', '$http', function($scope, $http) {
+
+  $http.get(transact)
+    .success(function(data) {
+      $scope.projects = data;
+      console.log(data);
+    });
+
+/*
+  $http.get(statesQuery)
+    .success(function(data) {
+      $scope.statesList = data;
+    })
+*/
+
+  // Formats the image's URL
+  $scope.appendExtension = function (filename) {
+    var domain = 'http://www.drlarchitects.com';
+    return domain + '/images/' + filename + '.jpg';
+  };
+
+  $scope.search = function(query) {
+    console.log($scope.query);
+    return query.searchString === $scope.query.searchString || query.otb === $scope.query.otb;
+  };
+}]);
+
+
+
+
+/*
 //Create factory object to store the images
 app.factory('getImages', function($http) {
   var getImages = {
     async: function() {
-      var promise = $http.get('../php/splash-slide.ajax.php')
+      var promise = $http.get(transact)
         .then (function (response) {
           return response.data
         });
@@ -13,9 +46,10 @@ app.factory('getImages', function($http) {
   };
   return getImages;
 });
+*/
 
 
-
+/*
 // Navigation control and template injection
 app.config(function($routeProvider) {
   $routeProvider
@@ -32,19 +66,23 @@ app.config(function($routeProvider) {
       templateUrl : 'contact.html'
     });
 });
+*/
 
+/*
 app.controller('mainController', function($scope, getImages) {
 });
 
 function injectImages(getImages) {
   console.log(getImages.length);
 }
+*/
 
-
+/*
 app.controller('slideImgCtrl', function(getImages, $scope, $interval) {
   getImages.async() // If the images were successfully retrieved...
     .then(function getImagesSucess(d) {
       $scope.data = d;
+      console.log($scope.data);
       return $scope.data;
   });
 
@@ -66,14 +104,15 @@ app.controller('slideImgCtrl', function(getImages, $scope, $interval) {
   };
 
 });
+*/
 
+/*
 // ### Image Gallery ###
-
 // Get the images
 app.factory('getImgGallery', function($http) {
   var getImgGallery = {
     async: function() {
-      var promise = $http.get('../php/splash-slide.ajax.php')
+      var promise = $http.get(transact)
         .then (function (response) {
           return response.data
         });
@@ -82,7 +121,9 @@ app.factory('getImgGallery', function($http) {
   };
   return getImgGallery;
 });
+*/
 
+/*
 app.controller('imageGalleryCtrl', function(getImgGallery, $scope, $interval) {
   getImgGallery.async() // If the images were successfully retrieved...
     .then(function getImagesSucess(d) {
@@ -94,3 +135,4 @@ app.controller('imageGalleryCtrl', function(getImgGallery, $scope, $interval) {
     return projectName.showProjectName = ! projectName.showProjectName;
   };
 });
+*/

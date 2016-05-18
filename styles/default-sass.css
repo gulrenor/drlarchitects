@@ -17,6 +17,8 @@ li {
   float: right; }
 
 html {
+  width: 100vw;
+  height: 100vw;
   min-height: 100%;
   font-size: 16; }
 
@@ -47,6 +49,8 @@ nav {
   margin-bottom: 3.1em; }
   nav #logo {
     position: relative;
+    width: 6rem;
+    object-fit: contain;
     top: 2.1em; }
   nav ul {
     margin: 0;
